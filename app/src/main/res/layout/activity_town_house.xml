@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".TownHouse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/townhouse"
+            android:id="@+id/singlev1"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/AptName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Green Boulevard"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:text="$2500"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AptPrice"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:textSize="15dp"
+                android:layout_weight="4"
+                android:textColor="@color/colorAccent"
+                android:gravity="end" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="East Coast, Alberta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Address"
+            android:textSize="10dp"
+
+            />
+
+
+        <CheckBox
+            android:id="@+id/cb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visited ?"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/th2"
+            android:id="@+id/singlev2"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/AptName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="La Renaissance"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:text="$3000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/AptPrice2"
+                android:textStyle="bold"
+                android:textAlignment="viewEnd"
+                android:textSize="15dp"
+                android:layout_weight="4"
+                android:textColor="@color/colorAccent"
+                android:gravity="end" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:text="St. Geroge Lake, Toronto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Address2"
+            android:textSize="10dp" />
+
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visited ?"
+            android:textSize="10dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed To Checkout"
+        android:onClick="proceedToCheckout"
+        android:background="@color/colorAccent"/>
+
+
+</LinearLayout>

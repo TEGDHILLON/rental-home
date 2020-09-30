@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PaymentMode"
+    android:background="@drawable/bcg"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40dp"
+        android:text="Payment Mode"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/payamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount to be Paid"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+
+        <RadioButton
+            android:id="@+id/rbcash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Cash" />
+
+        <RadioButton
+            android:id="@+id/rbcredit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Credit Card" />
+
+        <RadioButton
+            android:id="@+id/rbdebit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Debit Card" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btProceedToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed To Pay"
+        android:layout_marginTop="10dp"
+        android:onClick="proceedToPay"
+        android:background="@color/colorAccent"/>
+
+
+    <TextView
+        android:id="@+id/cashpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        />
+</LinearLayout>

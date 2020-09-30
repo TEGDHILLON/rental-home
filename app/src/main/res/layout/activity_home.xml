@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/homeimage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/homemain"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:textColor="#454545"
+        android:background="@drawable/bcg"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="This My Home App provides the easiest way to find a Home in Canada. We have our branches in America and other countries also. This helps anyone to find a home according to his or her needs. This app has a list of both luxurios homes which are very costly as well as homes with cheaper rates considering the needy people too. Just go on wandering this app, you may find the way to your new Home."/>
+
+
+</LinearLayout>

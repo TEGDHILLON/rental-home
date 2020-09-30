@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment"
+    android:background="@drawable/bcg"
+    android:layout_margin="10dp">
+
+
+    <TextView
+        android:id="@+id/payamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount to be Paid"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/payname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPersonName"
+        android:hint="Enter your name" />
+
+    <TextView
+        android:id="@+id/paycard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etcardnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your card Number"
+        android:layout_marginBottom="10dp"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/payCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CVV"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etcvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your CVV"
+        android:layout_marginBottom="10dp"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/payphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your phone Number"
+        android:layout_marginBottom="10dp"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/payemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your Email"
+        android:layout_marginBottom="10dp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/payfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favourite Food"
+        android:textColor="#454545"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter your favorite food"
+        android:inputType="textPersonName"
+        />
+
+    <Button
+        android:id="@+id/btpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pay"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorAccent"
+        android:text="Pay" />
+
+
+
+
+
+</LinearLayout></ScrollView>

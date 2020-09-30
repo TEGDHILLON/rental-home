@@ -1,0 +1,31 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/apartment"
+        android:orderInCategory="100"
+        android:title="Apartment"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/detached"
+        android:orderInCategory="100"
+        android:title="Detached Apartment"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/semidetached"
+        android:orderInCategory="100"
+        android:title="Semi-Detached"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/condominion"
+        android:orderInCategory="100"
+        android:title="Condominion"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/townhouse"
+        android:orderInCategory="100"
+        android:title="Town House"
+        app:showAsAction="never" />
+
+</menu>
